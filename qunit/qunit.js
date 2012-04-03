@@ -368,6 +368,10 @@ var QUnit = {
 		QUnit.push(expected !== actual, actual, expected, message);
 	},
 
+	likes: function(actual, expected, message) {
+		QUnit.push(expected.test(actual), actual, expected.toString(), message);
+	},
+
 	raises: function(block, expected, message) {
 		var actual, ok = false;
 
