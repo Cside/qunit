@@ -402,7 +402,7 @@ var QUnit = {
 			}
 		}
 
-		QUnit.ok(ok, message);
+		QUnit.push(ok, actual, expected.toString(), message);
 	},
 
 	start: function(count) {
